@@ -9,7 +9,9 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # 本番環境用設定
-SITEURL = 'https://jaws-ug-nagasaki.github.io'
+# 環境変数 SITEURL が設定されている場合はそれを使用し、
+# 設定されていない場合はデフォルト値を使用
+SITEURL = os.environ.get('SITEURL', 'https://jaws-ug-nagasaki.github.io/website')
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'

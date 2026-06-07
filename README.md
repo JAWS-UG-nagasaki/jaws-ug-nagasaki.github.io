@@ -118,6 +118,20 @@ mainブランチにプッシュすると、GitHub Actionsが自動的にGitHub P
 1. GitHubリポジトリのSettings > PagesでSourceを「GitHub Actions」に設定
 2. Settings > Actions > General > Workflow permissionsで「Read and write permissions」に設定
 
+### ドメイン設定
+
+サイトのドメインは `publishconf.py` で環境変数 `SITEURL` から読み込むように設定されています。
+
+- **GitHub Actionsでのデプロイ時**: `.github/workflows/deploy.yml` で `SITEURL` 環境変数を設定します（現在は `https://jaws-ug-nagasaki.github.io/website`）
+- **ローカルでのビルド時**: 環境変数を設定してビルドします
+
+```bash
+# ドメインを指定してビルド
+SITEURL=https://jaws-ug-nagasaki.github.io/website pelican -s publishconf.py
+```
+
+ドメインを変更する場合は、`.github/workflows/deploy.yml` の `SITEURL` 環境変数の値を変更してください。
+
 ## 運用フロー
 
 イベント後に以下の手順でサイトを更新：

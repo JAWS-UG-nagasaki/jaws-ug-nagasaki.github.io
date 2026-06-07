@@ -36,6 +36,8 @@ jobs:
         run: uv sync
 
       - name: Build site
+        env:
+          SITEURL: 'https://jaws-ug-nagasaki.github.io/website'
         run: |
           source .venv/bin/activate
           pelican -s publishconf.py
