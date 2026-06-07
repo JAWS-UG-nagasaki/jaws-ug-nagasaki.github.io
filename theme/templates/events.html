@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Events - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="mb-margin-lg">
+    <h1 class="font-headline-xl text-headline-xl mb-4">Events</h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+        Connect, learn, and grow with the AWS community in Nagasaki. From deep-dive study sessions to casual lightning talks.
+    </p>
+</div>
+
+<!-- Filter Section -->
+<div class="mb-margin-md sticky top-[72px] bg-background/95 backdrop-blur-sm z-40 py-4 flex flex-wrap items-center gap-3 border-b border-outline-variant/30">
+    <span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider mr-2">Filter By:</span>
+    <button class="px-4 py-1.5 rounded-full border border-primary text-primary bg-primary-container font-label-mono text-label-mono hover:bg-secondary-container transition-all">All</button>
+    <button class="px-4 py-1.5 rounded-full border border-outline text-on-surface-variant font-label-mono text-label-mono hover:border-primary hover:text-primary transition-all">Study session</button>
+    <button class="px-4 py-1.5 rounded-full border border-outline text-on-surface-variant font-label-mono text-label-mono hover:border-primary hover:text-primary transition-all">LT</button>
+    <button class="px-4 py-1.5 rounded-full border border-outline text-on-surface-variant font-label-mono text-label-mono hover:border-primary hover:text-primary transition-all">Online</button>
+    <button class="px-4 py-1.5 rounded-full border border-outline text-on-surface-variant font-label-mono text-label-mono hover:border-primary hover:text-primary transition-all">Offline</button>
+</div>
+
+<!-- Event List -->
+<div class="space-y-gutter">
+    {% for article in articles %}
+    <article class="grid grid-cols-1 md:grid-cols-12 gap-gutter p-6 rounded-lg bg-surface-container border border-outline-variant hover:border-primary transition-colors group cursor-pointer">
+        <div class="md:col-span-4 aspect-video overflow-hidden rounded border border-outline-variant">
+            {% if article.image %}
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="{{ article.title }}" src="{{ article.image }}"/>
+            {% else %}
+            <div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
+                <span class="material-symbols-outlined text-6xl text-on-surface-variant opacity-50">event</span>
+            </div>
+            {% endif %}
+        </div>
+        <div class="md:col-span-8 flex flex-col justify-center">
+            <div class="flex items-center gap-2 mb-2">
+                <span class="font-label-mono text-label-mono text-on-surface-variant">{{ article.date|strftime('%Y.%m.%d') }}</span>
+            </div>
+            <h2 class="font-headline-md text-headline-md mb-2 group-hover:text-primary transition-colors">
+                <a href="{{ article.url }}" class="text-inherit hover:text-inherit">{{ article.title }}</a>
+            </h2>
+            <div class="flex gap-2 mb-4">
+                {% if article.category %}
+                <span class="font-label-mono text-[12px] px-2 py-0.5 rounded border border-outline-variant text-on-surface-variant">{{ article.category }}</span>
+                {% endif %}
+                <span class="font-label-mono text-[12px] px-2 py-0.5 rounded border border-outline-variant text-on-surface-variant">AWS</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                {{ article.summary }}
+            </p>
+        </div>
+    </article>
+    {% endfor %}
+</div>
+{% endblock %}

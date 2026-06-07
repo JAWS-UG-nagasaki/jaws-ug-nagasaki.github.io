@@ -1,0 +1,9 @@
+[project]
+name = "jaws-ug-nagasaki"
+version = "0.1.0"
+description = "JAWS-UG 長崎 Webサイト"
+requires-python = ">=3.10"
+dependencies = [
+    "pelican==4.11.0",
+    "markdown==3.10.2",
+]

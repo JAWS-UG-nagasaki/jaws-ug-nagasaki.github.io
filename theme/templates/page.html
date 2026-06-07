@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+<style>
+    .page-content h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: #e5e2e2;
+        border-bottom: 1px solid #45474b;
+        padding-bottom: 0.5rem;
+    }
+    .page-content h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        color: #e5e2e2;
+    }
+    .page-content p {
+        margin-bottom: 1rem;
+        line-height: 1.75;
+        color: #c6c6cb;
+    }
+    .page-content ul, .page-content ol {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        color: #c6c6cb;
+        list-style-type: disc;
+    }
+    .page-content ol {
+        list-style-type: decimal;
+    }
+    .page-content li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+    .page-content a {
+        color: #c3c6cf;
+        text-decoration: underline;
+    }
+    .page-content a:hover {
+        color: #c3c6cf;
+    }
+    .page-content code {
+        background: #353435;
+        padding: 0.125rem 0.375rem;
+        border-radius: 0.25rem;
+        font-size: 0.875rem;
+        color: #c3c6cf;
+    }
+    .page-content blockquote {
+        border-left: 4px solid #c3c6cf;
+        padding-left: 1rem;
+        margin: 1rem 0;
+        color: #8f9095;
+        font-style: italic;
+    }
+</style>
+{% endblock %}
+
+{% block title %}{{ page.title }} - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<article class="py-margin-lg">
+    <header class="mb-margin-lg">
+        <h1 class="font-headline-xl text-headline-xl mb-4">{{ page.title }}</h1>
+        {% if page.date %}
+        <div class="font-label-mono text-label-mono text-on-surface-variant">
+            {{ page.date|strftime('%Y.%m.%d') }}
+        </div>
+        {% endif %}
+    </header>
+
+    <div class="page-content max-w-3xl">
+        {{ page.content }}
+    </div>
+</article>
+{% endblock %}
