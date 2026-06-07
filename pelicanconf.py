@@ -103,7 +103,7 @@ PAGE_SAVE_AS = '{slug}.html'
 IGNORE_FILES = ['_template.md']
 
 # Sitemapプラグイン設定
-PLUGINS = ['pelican.plugins.sitemap']
+PLUGINS = ['sitemap']
 SITEMAP = {
     'format': 'xml',
     'priorities': {

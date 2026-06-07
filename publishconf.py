@@ -23,7 +23,7 @@ DELETE_OUTPUT_DIRECTORY = True
 GOOGLE_ANALYTICS = ''  # 必要に応じて追加
 
 # Sitemapプラグイン設定（本番環境用）
-PLUGINS = ['pelican.plugins.sitemap']
+PLUGINS = ['sitemap']
 SITEMAP = {
     'format': 'xml',
     'priorities': {

@@ -7,5 +7,5 @@ dependencies = [
     "pelican==4.11.0",
     "markdown==3.10.2",
     "pyyaml",
-    "pelican-plugins",
+    "pelican-sitemap",
 ]
