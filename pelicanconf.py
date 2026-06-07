@@ -102,6 +102,22 @@ PAGE_SAVE_AS = '{slug}.html'
 # テンプレートファイルを無視
 IGNORE_FILES = ['_template.md']
 
+# Sitemapプラグイン設定
+PLUGINS = ['pelican.plugins.sitemap']
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
+
 # メンバーYAMLファイルを読み込み
 def load_members():
     members_file = _os.path.join(_HERE, 'content', 'members.yaml')
