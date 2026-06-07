@@ -5,6 +5,7 @@ Tags: AWS, BuilderCards, 体験会
 Slug: 2026-06-13-aws-buildercards
 Connpass: https://jawsug-nagasaki.connpass.com/event/392986/
 Summary: AWS公式のカードゲームを使って楽しみながらAWSを学ぶ体験型イベント
+Image: /static/event/vol0.png
 
 ## イベント概要
 

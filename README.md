@@ -143,7 +143,7 @@ SITEURL=https://jaws-ug-nagasaki.github.io/website pelican -s publishconf.py
 
 ## ライセンス
 
-本リポジトリのコンテンツは、特記のない限りCC BY 4.0で公開されます。
+本リポジトリのコンテンツは、特記のない限りCC BY-NC 4.0（表示 - 非営利 4.0 国際）で公開されます。
 
 ## Webサイト
 
