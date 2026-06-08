@@ -10,7 +10,7 @@ ENV/
 env/
 
 # Pelican
-# output/
+output/
 cache/
 *.pyc
 

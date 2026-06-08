@@ -13,8 +13,6 @@ help:
 
 html:
 	source .venv/bin/activate && pelican content -s pelicanconf.py
-	cp static/favicon.ico output/favicon.ico
-	cp static/custom.css output/custom.css
 
 clean:
 	[ ! -d output ] || rm -rf output

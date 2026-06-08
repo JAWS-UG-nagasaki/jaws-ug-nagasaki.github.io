@@ -70,6 +70,7 @@ DIRECT_TEMPLATES = ['index', 'events']
 
 # 静的ファイル
 STATIC_PATHS = ['images', 'static']
+STATIC_EXCLUDES = []
 
 # 静的ファイルのパス設定
 EXTRA_PATH_METADATA = {

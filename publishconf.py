@@ -25,6 +25,12 @@ DELETE_OUTPUT_DIRECTORY = True
 # SEO対策
 GOOGLE_ANALYTICS = ''  # 必要に応じて追加
 
+# 本番環境ではTailwind CSS CDNを使用しない（ビルド版CSSを使用する必要あり）
+# 開発環境でのCDN警告は無視して問題ありません
+EXTRA_HEAD = """
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+"""
+
 # Sitemapプラグイン設定（本番環境用）
 PLUGINS = ['sitemap']
 SITEMAP = {
