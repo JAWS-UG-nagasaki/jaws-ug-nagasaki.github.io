@@ -37,7 +37,7 @@ jobs:
 
       - name: Build site
         env:
-          SITEURL: https://jaws-ug-nagasaki.github.io/website
+          SITEURL: https://jaws-ug-nagasaki.github.io
           DISCORD_URL: ${{ secrets.DISCORD_URL }}
         run: uv run pelican -s publishconf.py
 
