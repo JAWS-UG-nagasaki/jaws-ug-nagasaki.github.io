@@ -7,7 +7,10 @@
 <section class="relative py-margin-lg overflow-hidden border-b border-outline-variant">
     <div class="absolute inset-0 z-0 opacity-40">
         <div class="absolute inset-0 bg-gradient-to-tr from-primary-container via-surface-container-low to-transparent"></div>
-        <img alt="Nagasaki Night Harbor" class="w-full h-full object-cover grayscale contrast-125" src="/images/top.JPG"/>
+        <picture>
+            <source media="(max-width: 768px)" srcset="/images/top-small.webp"/>
+            <img alt="Nagasaki Night Harbor" class="w-full h-full object-cover grayscale contrast-125" src="/images/top.webp"/>
+        </picture>
     </div>
     <div class="relative z-10 py-margin-lg" style="padding-left: 10px;">
         <h1 class="font-headline-xl text-headline-xl mb-4">JAWS-UG Nagasaki</h1>
@@ -50,7 +53,7 @@
     </div>
 </section>
 
-<!-- Next Event Highlight -->
+<!-- Next Event Highlight 更新が面倒なので廃止
 <section class="py-margin-md">
     <div class="bg-surface-container-high border border-primary/20 rounded-xl p-margin-md relative overflow-hidden">
         <div class="absolute top-0 right-0 p-4">
@@ -79,7 +82,7 @@ connpass で確認
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- Recent Events Grid -->
 <section class="py-margin-lg">
