@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 from datetime import date
 import os as _os
 import yaml
+import base64
 _HERE = _os.path.dirname(_os.path.abspath(__file__))
 
 AUTHOR = 'JAWS-UG 長崎'
@@ -141,7 +142,9 @@ def load_members():
     return {'members': []}
 
 # Discord URL設定（環境変数から読み込み、デフォルトはダミー値）
-DISCORD_URL = _os.environ.get('DISCORD_URL', 'https://discord.gg/')
+# スパム対策のためBase64エンコード
+_raw_discord_url = _os.environ.get('DISCORD_URL', 'https://discord.gg/')
+DISCORD_URL = base64.b64encode(_raw_discord_url.encode('utf-8')).decode('utf-8')
 
 JINJA_GLOBALS = {
     'site_members': load_members()['members'],

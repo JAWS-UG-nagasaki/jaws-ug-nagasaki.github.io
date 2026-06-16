@@ -33,9 +33,26 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.discord-link').forEach(function(link) {
-                const discordUrl = link.getAttribute('data-discord-url');
-                if (discordUrl && discordUrl !== 'https://discord.gg/') {
-                    link.setAttribute('href', discordUrl);
+                const encodedUrl = link.getAttribute('data-discord-url');
+                if (encodedUrl && encodedUrl !== '') {
+                    try {
+                        const discordUrl = atob(encodedUrl);
+                        if (discordUrl && discordUrl !== 'https://discord.gg/') {
+                            link.setAttribute('href', discordUrl);
+                        } else {
+                            link.setAttribute('href', '#');
+                            link.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                alert('Discordは現在準備中です');
+                            });
+                        }
+                    } catch (e) {
+                        link.setAttribute('href', '#');
+                        link.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            alert('Discordは現在準備中です');
+                        });
+                    }
                 } else {
                     link.setAttribute('href', '#');
                     link.addEventListener('click', function(e) {
