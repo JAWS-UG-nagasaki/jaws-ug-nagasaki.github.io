@@ -142,8 +142,9 @@ def load_members():
     return {'members': []}
 
 # Discord URL設定（環境変数から読み込み、デフォルトはダミー値）
-# スパム対策のためBase64エンコード
-_raw_discord_url = _os.environ.get('DISCORD_URL', 'https://discord.gg/')
+# スパム対策のため元のURLをそのまま書かず、Base64エンコードした文字列からデコードします
+_default_discord_url = base64.b64decode('aHR0cHM6Ly9kaXNjb3JkLmdnL0dIVG1xZ0ZEWjk=').decode('utf-8')
+_raw_discord_url = _os.environ.get('DISCORD_URL', _default_discord_url)
 DISCORD_URL = base64.b64encode(_raw_discord_url.encode('utf-8')).decode('utf-8')
 
 JINJA_GLOBALS = {

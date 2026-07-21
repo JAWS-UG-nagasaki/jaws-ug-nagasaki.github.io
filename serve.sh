@@ -23,10 +23,10 @@ build() {
     echo "📦 サイトをビルド中..."
     source .venv/bin/activate && pelican content -s pelicanconf.py
     echo "📁 静的ファイルをコピー中..."
-    cp -r static output/
-    cp static/favicon.ico output/favicon.ico
-    cp static/custom.css output/custom.css
-    cp static/googled0690c3ab706fd43.html output/googled0690c3ab706fd43.html
+    cp -r content/static output/
+    cp content/static/favicon.ico output/favicon.ico
+    cp content/static/custom.css output/custom.css
+    cp content/static/googled0690c3ab706fd43.html output/googled0690c3ab706fd43.html
 }
 
 serve() {
