@@ -1,0 +1,4 @@
+interface:
+  display_name: "JAWS-UG長崎 レポート編集"
+  short_description: "JAWS-UG長崎の開催レポートを読みやすく整える"
+  default_prompt: "Use $ai-smell-detector to draft a factual JAWS-UG長崎 event report from the supplied records."
