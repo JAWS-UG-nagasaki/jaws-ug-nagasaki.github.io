@@ -1,5 +1,6 @@
 Title: イベントタイトル
 Date: 2026-05-01
+Modified: 2026-05-01
 Category: events
 Tags: AWS, LT
 Slug: 2026-05-01-event-slug

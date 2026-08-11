@@ -1,5 +1,6 @@
 Title: JAWS-UG長崎 #1 AI時代の仕様駆動開発を体験しよう 開催レポート
 Date: 2026-08-09
+Modified: 2026-08-11
 Category: events
 Tags: AWS, Kiro, 生成AI, ハンズオン, レポート
 Slug: 2026-08-08-jaws-ug-nagasaki-1

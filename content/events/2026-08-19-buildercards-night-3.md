@@ -1,5 +1,6 @@
 Title: JAWS-UG長崎 BuilderCards Night #3 ～遊びながらAWSを学ぶ夜～
 Date: 2026-08-19
+Modified: 2026-07-21
 Category: events
 Tags: AWS, BuilderCards, 定例会
 Slug: 2026-08-19-buildercards-night-3

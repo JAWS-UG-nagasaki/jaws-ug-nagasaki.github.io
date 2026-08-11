@@ -122,12 +122,12 @@ mainブランチにプッシュすると、GitHub Actionsが自動的にGitHub P
 
 サイトのドメインは `publishconf.py` で環境変数 `SITEURL` から読み込むように設定されています。
 
-- **GitHub Actionsでのデプロイ時**: `.github/workflows/deploy.yml` で `SITEURL` 環境変数を設定します（現在は `https://jaws-ug-nagasaki.github.io/website`）
+- **GitHub Actionsでのデプロイ時**: `.github/workflows/deploy.yml` で `SITEURL` 環境変数を設定します（現在は `https://jaws-ug-nagasaki.github.io`）
 - **ローカルでのビルド時**: 環境変数を設定してビルドします
 
 ```bash
 # ドメインを指定してビルド
-SITEURL=https://jaws-ug-nagasaki.github.io/website pelican -s publishconf.py
+SITEURL=https://jaws-ug-nagasaki.github.io pelican -s publishconf.py
 ```
 
 ドメインを変更する場合は、`.github/workflows/deploy.yml` の `SITEURL` 環境変数の値を変更してください。
@@ -137,6 +137,8 @@ SITEURL=https://jaws-ug-nagasaki.github.io/website pelican -s publishconf.py
 イベント後に以下の手順でサイトを更新：
 
 1. `content/events/`にイベント記事を追加
+   - `Date` には開催日または記事の公開日を設定する
+   - 記事を更新したら `Modified` に実際の更新日を `YYYY-MM-DD` 形式で設定する。sitemap の `lastmod` にはこの値が反映される
 2. 必要に応じてトップページを更新
 3. `git commit` & `git push`
 4. GitHub Actionsが自動デプロイ

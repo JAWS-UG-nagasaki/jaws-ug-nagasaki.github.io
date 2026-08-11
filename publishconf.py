@@ -11,7 +11,7 @@ from pelicanconf import *
 # 本番環境用設定
 # 環境変数 SITEURL が設定されている場合はそれを使用し、
 # 設定されていない場合はデフォルト値を使用
-SITEURL = os.environ.get('SITEURL', 'https://jaws-ug-nagasaki.github.io/website')
+SITEURL = os.environ.get('SITEURL', 'https://jaws-ug-nagasaki.github.io')
 RELATIVE_URLS = False
 
 # Discord URL設定（環境変数から読み込み、設定されていない場合はpelicanconf.pyのデフォルト値を使用）

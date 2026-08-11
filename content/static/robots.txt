@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jaws-ug-nagasaki.github.io/website/sitemap.xml
+Sitemap: https://jaws-ug-nagasaki.github.io/sitemap.xml

@@ -1,5 +1,6 @@
 Title: JAWS-UG長崎 第0回 AWS BuilderCards 体験会 レポート
 Date: 2026-06-14
+Modified: 2026-06-15
 Category: events
 Tags: AWS, BuilderCards, 体験会, レポート
 Slug: 2026-06-13-aws-buildercards-report
