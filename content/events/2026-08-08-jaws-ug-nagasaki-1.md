@@ -35,7 +35,7 @@ Image: /static/event/vol1.png
 
 ### Kiro Crew
 
-2本目のLTでは、Kiro Crewを取り上げました。発表では、OpenClawを参考にした仕組みとして紹介され、アプリを導入するとエージェントの動きを確認できる点などが話題になりました。
+2本目のLTでは、Kiro Crewを取り上げました。発表では、OpenClawを参考にした仕組みとして紹介され、アプリを導入するとエージェントの動きを確認できる点などが話題になりました。LTで扱った内容をもとにした[Kiro Crewの解説記事](https://zenn.dev/tanukiman/articles/cc293d28f7acd1)も公開されています。
 
 ## アンケートから
 
