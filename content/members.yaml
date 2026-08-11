@@ -1,7 +1,24 @@
+# 公開する運営メンバーを追加する。画像は content/images/members/ に置き、
+# avatar にはサイト上のパスを指定する。
+#
+# members:
+#   - name: 山田 太郎
+#     role: オーガナイザー
+#     bio: AWSと長崎のコミュニティづくりに取り組んでいます。
+#     avatar: /images/members/yamada-taro.webp
+#     links:
+#       - label: GitHub
+#         url: https://github.com/example
+#       - label: X
+#         url: https://x.com/example
 members:
-  - name: メンバー名1
-    avatar: /images/members/avatar1.jpg
-  - name: メンバー名2
-    avatar: /images/members/avatar2.jpg
-  - name: メンバー名3
-    avatar: /images/members/avatar3.jpg
+  - name: 紫苑
+    bio: 主にバックエンドエンジニアをやっています。
+    avatar: /images/members/sion.jpg
+    links:
+      - label: GitHub
+        url: https://github.com/sion908
+      - label: X
+        url: https://x.com/Sion908_
+      - label: website
+        url: https://sion908.tech

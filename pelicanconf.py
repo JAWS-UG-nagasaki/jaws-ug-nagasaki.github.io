@@ -138,7 +138,9 @@ def load_members():
     members_file = _os.path.join(_HERE, 'content', 'members.yaml')
     if _os.path.exists(members_file):
         with open(members_file, 'r', encoding='utf-8') as f:
-            return yaml.safe_load(f)
+            data = yaml.safe_load(f) or {}
+            members = data.get('members', [])
+            return {'members': members if isinstance(members, list) else []}
     return {'members': []}
 
 # Discord URL設定（環境変数から読み込み、デフォルトはダミー値）
