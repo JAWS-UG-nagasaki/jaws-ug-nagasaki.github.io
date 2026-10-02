@@ -26,3 +26,7 @@ cache/
 
 # Logs
 *.log
+
+# Credentials & Secrets
+cred.json
+.env

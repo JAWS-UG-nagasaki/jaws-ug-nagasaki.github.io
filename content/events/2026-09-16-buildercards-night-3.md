@@ -1,9 +1,9 @@
 Title: JAWS-UG長崎 BuilderCards Night #3 ～遊びながらAWSを学ぶ夜～
-Date: 2026-08-19
-Modified: 2026-07-21
+Date: 2026-09-16
+Modified: 2026-09-16
 Category: events
 Tags: AWS, BuilderCards, 定例会
-Slug: 2026-08-19-buildercards-night-3
+Slug: 2026-09-16-buildercards-night-3
 Connpass: https://jawsug-nagasaki.connpass.com/event/400799/
 Summary: AWSに興味はあるけれど、勉強会は少しハードルが高い。そんな方でも気軽に参加できる場として、毎月第3水曜日に「BuilderCards Night」を開催します。
 Image: /static/event/buildercards_night_vol2.png
@@ -20,7 +20,7 @@ AWSをこれから触ってみたい方、業務で利用している方、個�
 
 ## 開催概要
 
-- 日時：2026/8/19（水）18:30〜
+- 日時：2026/9/16（水）18:30〜
 - 会場：bar tuath (長崎市船大工町6-13 紳士堂ビル1階)
 - 形式：オフライン
 - 参加費：1,500円（ワンドリンク付き）

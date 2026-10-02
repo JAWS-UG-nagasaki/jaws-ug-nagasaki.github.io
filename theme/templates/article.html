@@ -75,7 +75,8 @@
 
 {% block og_title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
 {% block og_description %}{{ article.summary|striptags|truncate(150) }}{% endblock %}
-{% block og_url %}{{ article.url }}{% endblock %}
+{% block og_url %}/{{ article.url }}{% endblock %}
+{% block canonical_url %}/{{ article.url }}{% endblock %}
 {% block og_image %}{% if article.image %}{{ SITEURL }}/{{ article.image }}{% else %}{{ SITEURL }}/images/top.JPG{% endif %}{% endblock %}
 
 {% block twitter_title %}{{ article.title }} - {{ SITENAME }}{% endblock %}

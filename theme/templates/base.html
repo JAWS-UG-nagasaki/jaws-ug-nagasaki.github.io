@@ -6,6 +6,7 @@
     <meta name="google-site-verification" content="4cdYbdtEqEYVxYupKEa_EG74FX7Pt2ftn-tmNBI07HA" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+    <link rel="canonical" href="{{ SITEURL }}{% block canonical_url %}/{% endblock %}">
     
     <!-- OGP -->
     <meta property="og:title" content="{% block og_title %}{{ SITENAME }}{% endblock %}">
